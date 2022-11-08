@@ -38,8 +38,12 @@ foreach ($item in $dataarray) {
 if ($order -eq "descending") {  # sort by descending or ascending
     $sorteddata = $cleanarray | Sort-Object -CaseSensitive -descending
 }
-else {
+elseif ($order -eq "ascending") {
     $sorteddata = $cleanarray | Sort-Object -CaseSensitive
+}
+else {
+    Write-Host "Order specified is invald. Ending script."
+    exit
 }
 
 $cleandata = @()    # create clean data array for next step
