@@ -1,0 +1,14 @@
+PS C:\users\nick\downloads\do> .\MyApp.ps1 "sample1.txt" "numeric" "ascending"
+1,1.5,2,3,4,6,7
+
+PS C:\users\nick\downloads\do> .\MyApp.ps1 "sample1.txt" "numeric" "descending"
+7,6,4,3,2,1.5,1
+
+PS C:\users\nick\downloads\do> .\MyApp.ps1 "sample2.txt" "numeric" "ascending"
+11,12,15,21,10000000000
+
+PS C:\users\nick.pufko\downloads\do> .\MyApp.ps1 "sample2.txt" "alpha" "ascending"
+'50','a',b,'c'
+
+PS C:\users\nick\downloads\do> .\MyApp.ps1 "sample2.txt" "both" "ascending"
+11,12,15,21,10000000000,'50','a',b,'c'
